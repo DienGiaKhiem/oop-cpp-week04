@@ -18,7 +18,7 @@ bool SoNguyenTo (int n){
 
 int main (){
     int n;
-    cout << "Nhap so n: ";
+    cout << "Nhap n: ";
     cin >> n;
 
     if (SoNguyenTo (n)){
