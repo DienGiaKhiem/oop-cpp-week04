@@ -1,23 +1,31 @@
 #include <iostream>
 using namespace std;
 
-int giaiphuongtrinh(int a, int b){
-    if (a == 0 && b == 0){
-        cout << "Phuong trinh vo so nghiem" << endl;
+void GiaiPhuongTrinh(float a, float b){
+    if (a == 0){
+        if (b == 0){
+            cout << "Phuong trinh co nghiem" << endl;
+        }
+        else cout << "Phuong trinh vo nghiem" << endl;
     }
-    else if (a == 0 && b != 0){
-        cout << "Phuong trinh vo nghiem" << endl;
+    else if (b == 0){
+        cout << "x = 0" << endl;
     }
-    else{
-        cout << "Phuong trinh co nghiem duy nhat: x = " << -b/a << endl;
+    else if (a != 0 && b != 0){
+        cout << "x = " << -b/a << endl;
     }
 }
 
 int main(){
-    int a;
-    int b;
-    cout << "a = " << a << ", b = " << b << endl;
-    cin >> a;
-    cin >> b;
+    float a, b;
+
+    cout << "Nhap a: "; cin >> a;
+    cout << "Nhap b: "; cin >> b;
+
+    cout << endl;
+
+    GiaiPhuongTrinh(a, b);
+
     return 0;
 }
+
